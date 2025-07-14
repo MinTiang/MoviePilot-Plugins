@@ -8,6 +8,7 @@ from datetime import datetime
 
 ServiceBase_Helper = ServiceBaseHelper(SystemConfigKey.MediaServers,MediaServerConf,ModuleType.MediaServer)
 media_server_config = ServiceBase_Helper.get_configs()
+logger.info("异常错误AAA：%s" % str(media_server_config))
 emby_config = media_server_config['EMBY'].config
 base_url = emby_config['host']
 
