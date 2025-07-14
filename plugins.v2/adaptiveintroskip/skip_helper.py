@@ -21,6 +21,16 @@ base_url = "http://" + base_url
 api_key = emby_config['apikey']
 headers = {'X-Emby-Token': api_key}
 
+if base_url is None:
+logger.error('请配置EMBY服务器')
+
+if not base_url.endswith("/"):
+base_url += "/"
+if not base_url.startswith("http"):
+base_url = "http://" + base_url
+api_key = emby_config['apikey']
+headers = {'X-Emby-Token': api_key}
+
 
 def format_time(seconds):
     # 将秒数转换为 datetime.timedelta 对象
