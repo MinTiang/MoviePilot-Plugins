@@ -15,7 +15,7 @@ class FfmpegHelper:
             frames = "00:03:01"
         if not video_path or not image_path:
             return False
-        cmd = 'ffmpeg -i "{video_path}" -ss {frames} -vframes 1 -f image2 "{image_path}"'.format(video_path=video_path,
+        cmd = 'ffmpeg -ss {frames} -i "{video_path}" -vframes 1 -f image2 "{image_path}"'.format(video_path=video_path,
                                                                                                  frames=frames,
                                                                                                  image_path=image_path)
         result = SystemUtils.execute(cmd)
