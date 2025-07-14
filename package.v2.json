@@ -19,6 +19,10 @@
     "version": "1.7.8",
     "icon": "chapter.png",
     "author": "mintiang",
-    "level": 1
+    "level": 1,
+	"history": {
+      "v2.1": "优化执行周期输入，需要MoviePilot v2.2.1+",
+      "v2.0": "兼容MoviePilot V2 版本"
+    }
   }
 }
