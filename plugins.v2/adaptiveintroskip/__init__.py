@@ -20,7 +20,7 @@ class AdaptiveIntroSkip(_PluginBase):
     # 插件描述
     plugin_desc = "自适应生成IntroSkip片头片尾标记，Emby跳片头、片尾"
     # 插件图标
-    plugin_icon = "https://raw.githubusercontent.com/mintiang/MoviePilot-Plugins/main/icons/chapter.png"
+    plugin_icon = "chapter.png"
     # 插件版本
     plugin_version = "1.7.8"
     # 插件作者
