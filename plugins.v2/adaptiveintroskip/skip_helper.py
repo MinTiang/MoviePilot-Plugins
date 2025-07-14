@@ -11,9 +11,6 @@ media_server_config = ServiceBase_Helper.get_configs()
 emby_config = media_server_config['EMBY'].config
 base_url = emby_config['host']
 
-if base_url is None:
-logger.error('请配置EMBY服务器')
-
 if not base_url.endswith("/"):
     base_url += "/"
 if not base_url.startswith("http"):
